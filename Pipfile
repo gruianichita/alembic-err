@@ -1,0 +1,25 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fastapi = "0.66.0"
+uvicorn = "0.14.0"
+SQLAlchemy = "1.4.21"
+aiomysql = "0.0.21"
+motorengine = "1.0.0"
+pydantic = "1.8.2"
+pyhumps = "3.0.2"
+alembic = "1.6.5"
+fastapi-utils = "0.2.1"
+SQLAlchemy-Utils = "0.37.8"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"
+
+
+[scripts]
+service = "uvicorn wsgi:app --reload"
